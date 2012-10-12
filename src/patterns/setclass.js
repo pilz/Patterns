@@ -16,7 +16,7 @@ define([
     var setclass = {
         init: function() {
 
-            $(document).on("click", '[data-setclass]').live('click', setclass.handleClick);
+            $(document).on("click", '[data-setclass]', setclass.handleClick);
             $("[data-setclass]").each(function() {
                 var $this = $(this);
                 var obj = setclass.getObjFromParams(
